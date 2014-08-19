@@ -17,7 +17,7 @@ action :add do
   unless @current_resource.exists
     CreateService()
   else
-    Chef::Log.debug("#{@new_resource} share already exists - nothing to do")
+    Chef::Log.debug("#{@new_resource} service already exists - nothing to do")
   end
 end
 
@@ -47,4 +47,3 @@ private
     end
     Chef::Log.info("Service Created")
   end
-end
