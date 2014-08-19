@@ -24,13 +24,13 @@ Allows for easy creation and deletion of Services.
 
 ### Actions
 
-- :add: - add a new samba share (default action)
+- :add: - add a new service (default action)
 
 ### Attribute Parameters
 
-- service_name: name attribute, the name of the share to be created.
-- path: The path the the folder you want to share.
-- description: The description of the share.
+- service_name: name attribute, the name of the service to be created.
+- path: The path the the folder you want to service.
+- description: The description of the service.
 
 ### Examples
 ```
