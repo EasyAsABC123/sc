@@ -38,7 +38,7 @@ end
 
 private
   def CreateService
-    cmd = "sc create \"#{@new_resource.service_name}\" binPath= \"#{@new_resource.path}\""
+    cmd = "sc create \"#{@new_resource.service_name}\" binPath= \"#{@new_resource.path}\" start= auto"
     cmd << " DisplayName= \"#{@new_resource.description}\"" if @new_resource.description
 
     Chef::Log.debug(cmd)
