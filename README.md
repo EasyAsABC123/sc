@@ -45,6 +45,4 @@ end
 License and Author
 ==================
 
-* Author:: Justin Schuhmann (<justin.schuhmann@e-hps.com>)
-
-Copyright:: 2014 Heartland Payment Systems
+* Author:: Justin Schuhmann (<justin.schuhmann@gmail.com>)
