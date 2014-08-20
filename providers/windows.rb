@@ -23,7 +23,7 @@ end
 
 def load_current_resource
   @current_resource = Chef::Resource::ScWindows.new(@new_resource.name)
-  @current_resource.share_name(@new_resource.service_name)
+  @current_resource.service_name(@new_resource.service_name)
   @current_resource.path(@new_resource.path)
   @current_resource.description(@new_resource.description)
   cmd = "sc query \"#{@new_resource.service_name}\""
