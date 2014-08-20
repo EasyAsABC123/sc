@@ -29,7 +29,7 @@ def load_current_resource
   cmd = "sc query \"#{@new_resource.service_name}\""
   
   Chef::Log.debug(cmd)
-  if shell_out(cmd, {:returns => [0]})
+  if ((shell_out(cmd)).exitstatus == 0)
     @current_resource.exists = true
   else
     @current_resource.exists = false
